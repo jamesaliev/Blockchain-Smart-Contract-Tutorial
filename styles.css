@@ -116,71 +116,9 @@ div {
     align-items: center;
 }
 
-
-@keyframes typing {
-    40%, 
-    60%{
-        left: calc(100% + 15px);
-    }
-    100%{
-        left: 0;
-    }
-}
-
-@keyframes slide {
-    100% {
-        top: -540px;
-    }
-}
-
 img {
     width: 30px;
     height: auto;
-}
-
-.moreaboutme {
-    padding-left: 50px;
-    padding-right: 50px;
-    list-style: none;
-    color: #d394a6;
-    font-size: 30px;
-    display: flex;
-    text-align: center;
-}
-
-.programmingLanguages {
-    list-style: none;
-    color: #d394a6;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-}
-
-.location {
-    color: #d394a6;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-}
-
-.games {
-    list-style: none;
-    color: #d394a6;
-    font-size: 30px;
-    text-align: center;
-}
-
-.lower-statement {
-    list-style: none;
-    color: #C06C84;
-    font-size: 20px;
-    text-align: center;
 }
 
 #footer {
