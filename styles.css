@@ -11,14 +11,15 @@
 }
 
 body {
-    background: #6C567B;
+    background: #3A5874;
+    cursor: url(images/cursor.svg), auto;
 }   
 
 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #F67280;
+    color: #CCCCFF;
     font-size: 50px;
 }
 
@@ -27,8 +28,9 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #C06C84;
+    color: #CCCCFF;
     font-size: 30px;
+    cursor: url(images/cursor.svg), auto;
 }
 
 .navbar {
@@ -74,14 +76,16 @@ h2 {
     align-items: center;
     list-style: none;
     text-align: center;
+    cursor: url(images/cursor.svg), auto;
 }
 
 .navbar__item {
     height: 80px;
+    cursor: url(images/cursor.svg), auto;
 }
 
 .navbar__links {
-    color: #F67280;
+    color: #CCCCFF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +97,7 @@ h2 {
 }
 
 .navbar__home {
-    color: #F67280;
+    color: #CCCCFF;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -105,7 +109,7 @@ h2 {
 }
 
 .navbar__links:hover {
-    color: #d394a6;
+    color: #94A6BB;
     transition: all 0.3s ease;
 }
 
@@ -141,7 +145,7 @@ img {
 
 .figcaptionheader {
     font-size: 20px;
-    color: #F67280;
+    color: #CCCCFF;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -184,4 +188,3 @@ img {
     left: 50%;
     transform: translateX(-50%);
 }
-
