@@ -33,6 +33,25 @@ h2 {
     cursor: url(images/cursor.svg), auto;
 }
 
+h3 {
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d394a6;
+    font-size: 24px;
+    cursor: url(images/cursor.svg), auto;
+}
+
+ul {
+    justify-content: center;
+    list-style-type: none;
+}
+.logoimg {
+    height: 30px;
+    width: 140px;
+    justify-content: left;
+}
 .navbar {
     background: #131313;
     height: 80px;
