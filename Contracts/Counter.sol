@@ -8,7 +8,7 @@ contract Counter {
         count = val;
     }
 
-    function incrament() public {
+    function increment() public {
         count++;
     }
 }
