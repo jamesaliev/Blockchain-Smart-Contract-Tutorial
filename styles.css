@@ -13,7 +13,7 @@
 body {
     background: #3A5874;
     cursor: url(images/cursor.svg), auto;
-}   
+}
 
 h1 {
     display: flex;
@@ -47,11 +47,13 @@ ul {
     justify-content: center;
     list-style-type: none;
 }
+
 .logoimg {
     height: 30px;
     width: 140px;
     justify-content: left;
 }
+
 .navbar {
     background: #131313;
     height: 80px;
@@ -74,6 +76,7 @@ ul {
     margin: 0 auto;
     padding: 0 50px;
 }
+
 /*
 #navbar__logo {
     background-image: linear-gradient(to top, #C06C84 0%, #F67280 100%);
@@ -145,11 +148,11 @@ img {
 }
 
 #footer {
-   position: absolute;
-   width: 100%;
-   height: 60px;
-   display: table-cell;
-   vertical-align: bottom;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    display: table-cell;
+    vertical-align: bottom;
 }
 
 .imageHolder {
@@ -206,4 +209,13 @@ img {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+p {
+    color: white;
+}
+
+.solidity-intro {
+    display: grid;
+    grid-template-columns: 1000px;
 }
