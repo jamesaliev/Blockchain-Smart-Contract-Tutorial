@@ -47,11 +47,17 @@ ul {
     justify-content: center;
     list-style-type: none;
 }
+
 .logoimg {
     height: 30px;
     width: 140px;
     justify-content: left;
+    cursor: url(images/cursor.svg), auto;
 }
+.logoimg:hover {
+    cursor: url(images/cursor.svg), auto;
+}
+
 .navbar {
     background: #131313;
     height: 80px;
@@ -127,9 +133,14 @@ ul {
 
 }
 
+.navbar__home:hover {
+    color: #545c63;
+    transition: all 0.5s ease;
+}
+
 .navbar__links:hover {
-    color: #94A6BB;
-    transition: all 0.3s ease;
+    color: #545c63;
+    transition: all 0.5s ease;
 }
 
 div {
@@ -207,3 +218,22 @@ img {
     left: 50%;
     transform: translateX(-50%);
 }
+section {
+  height: 10vh;
+}
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+  
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.red {
+    background-color: lightcoral;
+}
+  
