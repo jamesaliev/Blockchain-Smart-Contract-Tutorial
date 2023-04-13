@@ -2,143 +2,170 @@
 
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-        initial-scale=1.0">
-    <title>Solidity Intro</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/SolidifySmallLogo.png">
-    <script src="https://kit.fontawesome.com/a25dbb3a9c.js" crossorigin="anonymous"></script>
-    <!-- Boilerplate -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+            initial-scale=1.0">
+        <title>Solidity Intro</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="images/SolidifySmallLogo.png">
+        <script src="https://kit.fontawesome.com/a25dbb3a9c.js" crossorigin="anonymous"></script>
+        <!-- Boilerplate -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
 
-</head>
+    </head>
 
-<body>
-    <!-- Navbar Section-->
-    <nav class="navbar">
-        <a href = "index.html">
-            <img class = "logoimg" src = "images/Solidify.png">  
-        </a>
-        <div class="navbar__container">
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <body>
+        <!-- Navbar Section-->
+        <nav class="navbar">
+            <a href = "index.html">
+                <img class = "logoimg" src = "images/Solidify.png">  
+            </a>
+            <div class="navbar__container">
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <a class="navbar__home" href="/index.html" class="navbar__home"><i class="fas fa-home"></i></a>
+
+                <ul class="navbar__menu">
+
+
+                    <li class="navbar__item">
+                        <a href="/introduction.html" class="navbar__links">Introduction</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/basics.html" class="navbar__links">Blockchain Basics</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/smartcontracts.html" class="navbar__links">Smart Contracts</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/solidityintro.html" class="navbar__links">Solidity Intro</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/solidity.html" class="navbar__links">Solidity</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/practicetests.html" class="navbar__links">Practice Tests</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/contributions.html" class="navbar__links">Contributions</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/about.html" class="navbar__links">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button style = "border-radius: 10px; height: 30px; width: 120px;"class = "sign-up">Sign Up</button>
             </div>
 
-            <a class="navbar__home" href="/index.html" class="navbar__home"><i class="fas fa-home"></i></a>
+            <div>
+                <button style = "display: inline-flex; align-items: center; justify-content: center; background-color: #131313; border-width: 2px; border-radius: 10px; height: 30px; width: 120px; margin-left: 10px; margin-right: 30px; border-style: solid; border-color: #CCCCFF; color: #CCCCFF"class = "sign-up">Login</button>
+            </div>
+            
+        </nav>
 
-            <ul class="navbar__menu">
-
-
-                <li class="navbar__item">
-                    <a href="/introduction.html" class="navbar__links">Introduction</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="/basics.html" class="navbar__links">Blockchain Basics</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="/smartcontracts.html" class="navbar__links">Smart Contracts</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="/solidityintro.html" class="navbar__links">Solidity Intro</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="/solidity.html" class="navbar__links">Solidity</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="/practicetests.html" class="navbar__links">Practice Tests</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="/contributions.html" class="navbar__links">Contributions</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="/about.html" class="navbar__links">About</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <button style = "border-radius: 10px; height: 30px; width: 120px;"class = "sign-up">Sign Up</button>
+        <div class="solidity-intro">
+            <div>
+                <h1><b>What is Solidity</b></h1>
+            </div>
+            <div>
+                <h2>
+                    <p>Solidity is a programming language used in smart contract development<br>
+                        It is described as:
+                    </p>
+                </h2>
+            </div>
+            <div>
+                <h2>
+                    <ul style="font-size: 34px;">
+                        <li><b>Statically-typed</b> - Variable types must be explicitly stated</li>
+                        <li><b>Curly-braced</b> - Code sections are delimited by curly braces "{}"</li>
+                        <li><b>Object-oriented</b> - Code is organized into structures called objects</li>
+                    </ul>
+                </h2>
+            </div>
+            <div>
+                <!-- List of other solidity networks from here: [https://blog.logrocket.com/smart-contract-programming-languages/], [https://definoobs.com/these-blockchains-and-crypto-projects-use-solidity/]-->
+                <h3>
+                    <p>It is primarily used on the Ethereum blockchain
+                        network,
+                        but has uses in other networks,
+                        such as Binance Smart Chain, Tron, Avalanche, and Hedera.</p>
+                </h3>
+            </div>
         </div>
 
-        <div>
-            <button style = "display: inline-flex; align-items: center; justify-content: center; background-color: #131313; border-width: 2px; border-radius: 10px; height: 30px; width: 120px; margin-left: 10px; margin-right: 30px; border-style: solid; border-color: #CCCCFF; color: #CCCCFF"class = "sign-up">Login</button>
+        <div style="width:1000px; margin-right: auto; margin-left: auto;">
+            <h1><b>Why Solidity?</b></h1>
         </div>
-        
-    </nav>
-
-    <div class="solidity-intro">
-        <div>
-            <h1><b>What is Solidity</b></h1>
-        </div>
-        <div>
+        <div style="width:1000px; margin-right: auto; margin-left: auto;">
             <h2>
-                <p>Solidity is a programming language used in smart contract development<br>
-                    It is described as:
-                </p>
+                <p>This tutorial will use Solidity since it is:</p>
             </h2>
         </div>
-        <div>
-            <h2>
-                <ul style="font-size: 34px;">
-                    <li><b>Statically-typed</b> - Variable types must be explicitly stated</li>
-                    <li><b>Curly-braced</b> - Code sections are delimited by curly braces "{}"</li>
-                    <li><b>Object-oriented</b> - Code is organized into structures called objects</li>
-                </ul>
-            </h2>
-        </div>
-        <div>
-            <!-- List of other solidity networks from here: [https://blog.logrocket.com/smart-contract-programming-languages/], [https://definoobs.com/these-blockchains-and-crypto-projects-use-solidity/]-->
+        <div style="width:1000px; margin-right: auto; margin-left: auto;">
             <h3>
-                <p>It is primarily used on the Ethereum blockchain
-                    network,
-                    but has uses in other networks,
-                    such as Binance Smart Chain, Tron, Avalanche, and Hedera.</p>
+                <ul style="font-size: 34px; color: #CCCCFF;">
+                    <li><b>Commonly used </b> - If additional assistance required, greater volume of resources
+                        available.
+                    </li>
+                    <li><b>Dedicated to smart contracts</b> - </li>
+                    <li><b>Simple</b> - Solidity's syntax is similar to many popular languages, such as C++ and
+                        Javascript,
+                        and thus it provides a strong
+                        programming basis that will allow you to learn new languages with relative ease.</li>
+                </ul>
             </h3>
         </div>
-    </div>
 
-    <div style="width:1000px; margin-right: auto; margin-left: auto;">
-        <h1><b>Why Solidity?</b></h1>
-    </div>
-    <div style="width:1000px; margin-right: auto; margin-left: auto;">
-        <h2>
-            <p>This tutorial will use Solidity since it is:</p>
-        </h2>
-    </div>
-    <div style="width:1000px; margin-right: auto; margin-left: auto;">
-        <h3>
-            <ul style="font-size: 34px; color: #CCCCFF;">
-                <li><b>Commonly used </b> - If additional assistance required, greater volume of resources
-                    available.
-                </li>
-                <li><b>Dedicated to smart contracts</b> - </li>
-                <li><b>Simple</b> - Solidity's syntax is similar to many popular languages, such as C++ and
-                    Javascript,
-                    and thus it provides a strong
-                    programming basis that will allow you to learn new languages with relative ease.</li>
-            </ul>
-        </h3>
-    </div>
-
-    <div>
-        <h2><b>First contract</b></h2>
-    </div>
-
-    <script src="app.js"></script>
-</body>
-
-
+        <div>
+            <h1><b>First Contract</b></h1>
+        </div>
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <div style = "display: block;" class = "question-container" id = "quiz">
+                        <h2 style = "padding-top: 50px;" id = "question">Question Text</h2>
+                        <div style = "justify-content: left; text-align: left; padding-top: 0; padding-bottom: 0;" class = "question-header">
+                            <ul>
+                                <li>
+                                    <input type = "radio" name = "answer" id = "a" class = "answer">
+                                    <label style = "color: #d8d8fc;" for = "a" id = "a_text">Answer</label>
+                                </li>
+                                <li>
+                                    <input type = "radio" name = "answer" id = "b" class = "answer">
+                                    <label style = "color: #d8d8fc;" for = "b" id = "b_text">Answer</label>
+                                </li>
+                                <li>
+                                    <input type = "radio" name = "answer" id = "c" class = "answer">
+                                    <label style = "color: #d8d8fc;" for = "c" id = "c_text">Answer</label>
+                                </li>
+                                <li>
+                                    <input type = "radio" name = "answer" id = "d" class = "answer">
+                                    <label style = "color: #d8d8fc;" for = "d" id = "d_text">Answer</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <button style = "border-top-right-radius: 5px; border-top-left-radius: 5px;" id = "submit">Submit</button>
+                        <script src="App.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
