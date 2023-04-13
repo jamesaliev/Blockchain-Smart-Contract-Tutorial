@@ -237,6 +237,10 @@ ul li {
     margin: 1rem 0;
 }
 
+ul li label {
+    cursor: url(images/pointer.svg), auto;
+}
+
 button {
     background-color: #CCCCFF;
     color: #131313;

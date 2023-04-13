@@ -1,10 +1,10 @@
 const quizData = [
   {
       question: "Which is the best?",
-      a: "PLACEHOLDER",
-      b: "PLACEHOLDER",
-      c: "PLACEHOLDER",
-      d: "PLACEHOLDER",
+      a: "Jonah H",
+      b: "Jonah A",
+      c: "Jonah B",
+      d: "Jonah T",
       correct: "d",
   },
 ];
@@ -61,7 +61,7 @@ submitBtn.addEventListener('click', () => {
          <h2 style = "padding-top: 50px; padding-bottom: 0; ">You answered ${score}/${quizData.length} questions correctly</h2>
          <div style = "min-height: 100px;">
           <button style = "width: 50%; border-radius: 10px" onclick="location.reload()">Reload</button>
-        </div>
+         </div>
          `
      }
   }
