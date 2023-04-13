@@ -25,9 +25,7 @@ h1 {
 
 h2 {
     min-height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     color: #CCCCFF;
     font-size: 30px;
     cursor: url(images/cursor.svg), auto;
@@ -44,19 +42,22 @@ h3 {
 }
 
 ul {
-    justify-content: center;
     list-style-type: none;
+    padding: 0;
 }
 
 
 .logoimg {
     height: 30px;
-    width: 140px;
-    justify-content: left;
-    cursor: url(images/cursor.svg), auto;
+    width: 240px;
+    justify-content: right;
+    text-align: right;
+    padding-left: 10vh;
+    cursor: url(images/pointer.svg), auto;
 }
+
 .logoimg:hover {
-    cursor: url(images/cursor.svg), auto;
+    cursor: url(images/pointer.svg), auto;
 }
 
 
@@ -83,22 +84,6 @@ ul {
     padding: 0 50px;
 }
 
-/*
-#navbar__logo {
-    background-image: linear-gradient(to top, #C06C84 0%, #F67280 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    cursor: url(images/pointer.svg), auto;
-}
-*/
 .navbar__menu {
     display: flex;
     align-items: center;
@@ -223,25 +208,6 @@ img {
     left: 50%;
     transform: translateX(-50%);
 }
-section {
-  height: 10vh;
-}
-
-.tag {
-    opacity: 0;
-    transform: translate(0, 10vh);
-    transition: all 1s;
-}
-  
-.tag.visible {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-.red {
-    background-color: lightcoral;
-}
-  
 
 p {
     color: white;
@@ -250,4 +216,38 @@ p {
 .solidity-intro {
     display: grid;
     grid-template-columns: 1000px;
+}
+
+.question-container {
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    overflow: hidden;
+}
+
+.question-header {
+    padding: 4rem;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+button {
+    background-color: #CCCCFF;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: url(images/pointer.svg), auto;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: #d394a6;
+    transition: 1s;
 }
