@@ -255,3 +255,38 @@ button:hover {
     background-color: #d394a6;
     transition: all 1s ease;
 }
+
+#subheading {
+    text-align: left;
+    margin-left: 5%;
+    align-items: left;
+    justify-content: left;
+}
+
+table, th, td {
+    border: 1px solid;
+    width: auto;
+    color: aliceblue;
+}
+
+pre code {
+    background-color: #282828;
+    border: 3px solid #999;
+    display: block;
+    padding: 10%;
+    text-align: left;
+    align-items: left;
+    padding-right: 100%;
+    color: #F4BC1C;
+    margin-left: -20%;
+    margin-right: -20%;
+
+}
+
+code {
+    font-family: "Courier new";
+    padding:10%;
+    font-size: 105%;
+    text-align: left;
+    align-items: left;
+}
