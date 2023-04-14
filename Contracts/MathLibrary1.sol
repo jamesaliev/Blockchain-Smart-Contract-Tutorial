@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-contract MathLibrary {
+contract MathLibrary1 {
 
     // This variable is available to easily view the result of the math operation
     int public result;
