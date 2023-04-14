@@ -235,9 +235,14 @@ p {
 ul li {
     font-size: 1.2rem;
     margin: 1rem 0;
+    cursor: url(images/pointer.svg), auto;
 }
 
 ul li label {
+    cursor: url(images/pointer.svg), auto;
+}
+
+input {
     cursor: url(images/pointer.svg), auto;
 }
 
