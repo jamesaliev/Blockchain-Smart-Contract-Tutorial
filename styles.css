@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -254,9 +253,100 @@ button {
     width: 100%;
     cursor: url(images/pointer.svg), auto;
     font-size: 1.5rem;
+    text-align:center;
 }
 
 button:hover {
     background-color: #d394a6;
     transition: all 1s ease;
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.acc {
+    margin: 90px 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.acc li {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.acc_ctrl {
+    background: #131313;
+    border: none;
+    display: block;
+    outline: none;
+    position: relative;
+    text-align: center;
+    width: 640px;
+    height: 50px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: url(images/pointer.svg), auto;
+}
+
+.acc_ctrl h2 {
+    cursor: url(images/pointer.svg), auto;
+}
+
+.acc_ctrl:before {
+    background: white;
+    content: '';
+    height: 2px;
+    padding-right: 5px;
+    margin-right: 15px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 14px;
+}
+
+.acc_ctrl:after {
+    background: white;
+    right: 0;
+    padding-right: 5px;
+    margin-right: 15px;
+    content: '';
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    width: 14px;
+}
+
+.acc_ctrl.active:before {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.acc_ctrl.active h2, .acc_ctrl:focus h2 {
+    position: relative;
+}
+
+.acc_panel {
+    background: #131313;
+    display: none;
+    overflow: hidden;
+    border-radius: 15px;
 }
