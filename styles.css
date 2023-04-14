@@ -138,7 +138,6 @@ div {
 }
 
 img {
-    width: 30px;
     height: auto;
 }
 
@@ -404,4 +403,10 @@ code, code span {
 
 .ignore-css {
     all: initial;
+}
+
+.intro-element {
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
 }
