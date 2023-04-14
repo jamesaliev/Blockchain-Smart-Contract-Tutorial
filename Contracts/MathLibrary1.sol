@@ -36,6 +36,7 @@ contract MathLibrary1 {
         // Note that this function will not return rational numbers
 
         if (num2 == 0) {
+            // If a division by zero case were to occur, the result will be set to a default 0
             result = 0;
         }
         else {
