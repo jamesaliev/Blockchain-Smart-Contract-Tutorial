@@ -17,6 +17,7 @@
         <link rel = "stylesheet" href = "styles.css">
 
     </head>
+
     <body>        
         <!-- Navbar Section-->
         <nav class="navbar">
@@ -77,6 +78,388 @@
             </div>
             
         </nav>
+
+        <div>
+            <h1><b>Solidity</b></h1>
+        </div>
+        <div id="subheading">
+            <h2 >Variables</h2>
+        </div>
+        <div id="subheading">
+            <h3>
+                What are variables?
+            </h3>
+        </div>
+        <div>
+            <p>
+                A variable is the simplest form of data storage in a program. Variables store a single value of a single type of data, known as a data type. These include:
+            </p>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Variable Type</th>
+                    <th>What it holds</th>
+                </tr>
+
+                <tr>
+                    <td>Integer (Signed and unsigned)<br>
+                        <code>int</code> (signed)<br>
+                        <code>uint</code> (unsigned)
+                    </td>
+                    <td>
+                        <li>Whole numbers, like 2, 64, and 256</li>
+                        <li>Signed integers can be positive or negative</li>
+                        <li>Unsigned integers can only be positive or zero, but have a larger maximum value</li>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Floating point</td>
+                    <td>
+                        <li>Rational numbers, like 1.5, 2.573, and 10.0. </li>
+                        <li>Solidity does not have floating point values implemented at the time of writing.</li>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Boolean<br>
+                        <code>bool</code>
+                    </td>
+                    <td>
+                        <li>True or false.</li>
+                        <li>Boolean values are useful in making decisions in a program.</li>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Character</td>
+                    <td>
+                        <li>A single character, like ‘a’, ‘B’, and ‘@’</li>
+                        <li>Characters are not implemented in Solidity.</li>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>String<br>
+                        <code>string</code>
+                    </td>
+                    <td>
+                        <li>A “string” of characters, like a word or a sentence. </li>
+                        <li> For example, “This is a sentence” is a string.</li>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>
+                <br>A variable can be declared with the format:<br> 
+                &lt;type&gt; [access modifier] name;<br><br>
+            
+                Eg.<br>
+                    
+                <code>int public myNumber;<br></code>
+                <code>uint public numSales;<br></code>
+                <code>bool public isValidInput;<br></code>
+                <code>string public user;</code>
+                    
+
+            </p>
+        </div>
+        <div>
+            <ol style ="color: white">
+                <u>Some things to note:</u>
+                <li>All statements end with a semicolon.</li>
+                <li>Types are case-sensitive. Any deviation to the type name will result in an error. For example, declaring a variable of type “Int” is illegal.</li>
+                <li>Variable names are also case-sensitive. For example, “string public Name” and “string public name” are two different variables. You cannot have two variables with the same name.</li>
+                <li>Variable names cannot be existing keywords in solidity. For example, “int int” is not a legal variable name.</li>
+                <li>Variable names cannot start with a number. For example, “123var” is illegal, while “var123” is legal.</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                <i>Note: Access modifiers will be covered in Chapter 2.</i>
+            </p>
+        </div>
+
+        <div id="subheading">
+            <h2 >Assignment Operators</h2>
+        </div>
+        <div>
+            <p>
+                Variables can be assigned values with “=”. Variables can only be assigned values of their corresponding type.
+            </p>
+        </div>
+        <div>
+            <pre>
+                <code>
+int public num;
+num = 4;
+<span style="font-family:'Courier New'; Color:green" >// This is an invalid statement and will cause an error.</span>
+string name = 1;
+                </code>
+            </pre>
+        </div>
+        <div>
+            <p>
+                A variable can be given a value at its declaration. This is called “initialization.”<br>
+                <code>int public num = 4;</code><br><br>
+                
+                The values of a variable can be reassigned at any time.<br>
+                Eg.<br>
+                
+                <code>Int public a = 5;</code><br>
+                <code>a = 10;</code><br>
+                <code>a = 15;</code><br>
+                </p>
+        </div>
+        <div id = "subheading">
+            <h3>
+                Content Quiz
+            </h3>
+        </div>
+        <div style = "display: block; margin:auto" class = "question-container" id = "quiz">
+            <h2 style = "padding-top: 50px;" id = "question">Question Text</h2>
+            <div style = "justify-content: left; text-align: left; padding-top: 0; padding-bottom: 0;" class = "question-header">
+                <ul>
+                    <li>
+                        <input type = "radio" name = "answer" id = "a" class = "answer">
+                        <label style = "color: #d8d8fc;" for = "a" id = "a_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type = "radio" name = "answer" id = "b" class = "answer">
+                        <label style = "color: #d8d8fc;" for = "b" id = "b_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type = "radio" name = "answer" id = "c" class = "answer">
+                        <label style = "color: #d8d8fc;" for = "c" id = "c_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type = "radio" name = "answer" id = "d" class = "answer">
+                        <label style = "color: #d8d8fc;" for = "d" id = "d_text">Answer</label>
+                    </li>
+                </ul>
+            </div>
+            <button style = "border-top-right-radius: 5px; border-top-left-radius: 5px;" id = "submit">Submit</button>
+            <script src="App.js"></script>
+        </div>
+
+        <div id="subheading">
+            <h2 >Operations</h2>
+        </div>
+        <div>
+            <p style="font-size: 20px;">
+                In a smart contract, operations can be performed on variables, such as basic math, and comparisons.
+            </p>
+        </div>
+        <div id="subheading">
+            <h3>
+                Arithmetic
+            </h3>
+
+        </div>
+        <div>
+            <p>
+                Arithmetic can be performed on integers using the arithmetic operators + - * / and %.
+            </p>
+        </div>
+        <div>
+            <table style="width: 60%;">
+                <tr>
+                    <th>Arithmetic Symbol</th>
+                    <th>Operation</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <code>+</code>
+                    </td>
+                    <td>
+                        <u>Addition<br></u>
+                        You can add two numbers together with +<br>
+                        <code>int a = 5;</code><br>
+                        <code>int b = 10;</code><br>
+                        <code>int c = a + b;</code><br>
+                        <code>// c is equal to 5 + 10, or 15<br></code><br>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <code>-</code>
+                    </td>                   
+                    <td>
+                        <u>Subtraction<br></u>
+                        You can subtract two numbers together with -<br>
+                        <code>int a = 5;</code><br>
+                        <code>int b = 10;</code><br>
+                        <code>int c = b - a;</code><br>
+                        <code>// c is equal to 10 - 5, or 5</code><br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <code>*</code>
+                    </td>
+                    <td>
+                        <u>Multiplication<br></u>
+                        You can multiply two numbers together with *<br>
+                        <code>int a = 5;</code><br>
+                        <code>int b = 10;</code><br>
+                        <code>int c = b - a;</code><br>
+                        <code>// c is equal to 10 - 5, or 5</code><br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <code>/</code>
+                    </td>                    
+                    <td>
+                        <u>Division<br></u>
+                        You can divide two numbers with /<br>
+                        <code>int a = 5;</code><br>
+                        <code>int b = 10;</code><br>
+                        <code>int c = b / a;</code><br>
+                        <code>// c is equal to 0<br></code><br>
+
+                        Why is this? <br>Currently, there is no floating-point division in solidity. When dividing integers, the result always ignores the decimal. 5 / 10 is the same as 0.5, so the result ignores the .5 and returns 0.
+
+                        <br><br><i>Note that division by 0 will cause an error.</i><br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <code>%</code>
+                    </td>
+                    <td>
+                        <u>Modulo<br></u>
+                        Returns the remainder of a division.<br>
+                        Eg. <br>
+                        <code>int public a = 3;</code><br>
+                        <code>int public b = 2;</code><br>
+                        <code>int public c = 3 % 2;</code><br>
+                        <code>// c = 1, since 3/2 has remainder 1<br></code><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>
+            Applying an arithmetic operation to a variable can be shortened with arithmetic assignment operators. The statements in each row of the rightmost column are identical.
+            </p>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <th>Operation</th>
+                    <th>Shorthand Symbol</th>
+                    <th>Equivalent Operation</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        Addition
+                    </td>
+                    <td>
+                        <code>+=</code>
+                    </td>
+                    <td>
+                        <code>a = a + 2;</code><br>
+                        <code>a += 2;</code><br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Subtraction
+                    </td>
+                    <td>
+                        <code>-=</code>
+                    </td>
+                    <td>
+                        <code>a = a - 2;</code><br>
+                        <code>a -= 2;</code><br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Multiplication
+                    </td>
+                    <td>
+                        <code>*=</code>
+                    </td>
+                    <td>
+                        <code>a = a * 2;</code><br>
+                        <code>a *= 2;</code><br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Division
+                    </td>
+                    <td>
+                        <code>/=</code>
+                    </td>
+                    <td>
+                        <code>a = a / 2;</code><br>
+                        <code>a /= 2;</code><br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Modulo
+                    </td>
+                    <td>
+                        <code>%=</code>
+                    </td>
+                    <td>
+                        <code>a = a % 2;</code><br>
+                        <code>a %= 2;</code><br><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <p>
+                Another shortcut for adding or subtracting 1 from a variable is to use ++ or –-. The following lines are identical:
+            </p>
+        </div>
+        <div>
+            <pre>
+                <code>
+
+<span style="font-family:'Courier New'; Color:green" >// Equivalent addition statements:</span>
+a = a + 1;
+a += 1;
+a++;
+
+<span style="font-family:'Courier New'; Color:green" >// Equivalent subtraction statements:</span>
+a = a - 1;
+a -= 1;
+a–-;
+
+                </code>
+            </pre>
+        </div>
+
+        <div>
+            <p>
+                <i>Note: This only applies to adding or subtracting 1. This cannot be used to add or subtract any other number.</i>
+            </p>
+        </div>
+
+        <div id="subheading">
+            <h3 >Comparison</h3>
+        </div>
 
         <!-- Hero Section -->
         <div class="main">
