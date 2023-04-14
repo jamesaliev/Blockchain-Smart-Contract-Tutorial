@@ -401,3 +401,7 @@ code, code span {
     width: 1400px;
     text-align: left;
 }
+
+.ignore-css {
+    all: initial;
+}
