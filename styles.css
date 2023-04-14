@@ -26,7 +26,7 @@ h2 {
     min-height: 10vh;
     text-align: center;
     color: #CCCCFF;
-    font-size: 30px;
+    font-size: 34px;
     cursor: url(images/cursor.svg), auto;
 }
 
@@ -262,7 +262,7 @@ button:hover {
 }
 
 .container {
-    max-width: 640px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -285,7 +285,7 @@ button:hover {
     outline: none;
     position: relative;
     text-align: center;
-    width: 640px;
+    width: 1400px;
     height: 50px;
     border-radius: 15px;
     padding-top: 5px;
@@ -378,10 +378,26 @@ pre code {
 
 }
 
-code {
+pre code span{
+    padding: 10%;
+    text-align: left;
+    align-items: left;
+    padding-right: 100%;
+    color: green;
+    margin-right: -20%;
+    margin-left: -20%;
+}
+
+
+code, code span {
     font-family: "Courier new";
     padding:10%;
     font-size: 105%;
     text-align: left;
     align-items: left;
+}
+
+.answers {
+    width: 1400px;
+    text-align: left;
 }

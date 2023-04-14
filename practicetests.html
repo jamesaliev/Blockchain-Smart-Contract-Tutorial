@@ -15,7 +15,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "styles.css">
-
     </head>
     <body>        
         <!-- Navbar Section-->
@@ -77,24 +76,112 @@
             </div>
             
         </nav>
+        <div>
+            <h1>
+                Project #1: MathLibrary1
+            </h1>
+        </div>
+        <div>
+            <h2>
+                Your task:
+            </h2>
+        </div>
+        <div style = "min-height: 5vh;">
+            <h2>
+                Write a simple math contract that does the following:
+            </h2>
+        </div>
+        <div style = "min-height: 5vh;">
+            <table style = "width: 800px; font-size: 24px; text-align: center;">
+                <tr>
+                    <td>
+                        Adds two numbers
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Subtracts two numbers
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Multiplies two numbers
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Divides two numbers
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        For the multiplication process, make two versions: <br>- one that uses the multiplication operator <br> - and another that uses a loop.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        For the division process, implement a check so the program does not divide by zero.
+                    </td>
+                </tr>
+            </table>
+        </div>
         <div class="container">
             <ul class="acc">
               <li>
-                <button class="acc_ctrl"><h2>Jonah A</h2></button>
+                <button class="acc_ctrl"><h2>Project #1: MathLibrary1 Answer</h2></button>
                 <div class="acc_panel">
-                  <p>Jonah A kinda MID.</p>
-                </div>
-              </li>
-              <li>
-                <button class="acc_ctrl"><h2>Jonah T</h2></button>
-                <div class="acc_panel">
-                  <p>Jonah T the GOAT.</p>
-                </div>
-              </li>
-              <li>
-                <button class="acc_ctrl"><h2>Jonah H</h2></button>
-                <div class="acc_panel">
-                  <p>Jonah H kinda BASED.</p>
+                    <pre class = "answers">
+                        <code>
+                            pragma solidity ^0.8.0;
+                            
+                            contract MathLibrary1 {
+                                <span>
+                                // This variable is available to easily view the result of the math operation
+                                </span>
+                                int public result;
+
+                                function sum(int num1, int num2) public {
+                                    int sum = num1 + num2;
+
+                                    result = sum;
+                                    <span>
+                                    // This function can also be shortened to just
+                                    // result = num1 + num2;
+                                    </span>
+                                }
+
+                                function difference(int num1, int num2) public {
+                                    result = num1 - num2;
+                                }
+
+                                function multiplyOperator(int num1, int num2) public {
+                                    result = num1 * num2;
+                                }
+
+                                function multiplyLoop(int num1, int num2) public {
+                                    int product = 0;
+
+                                    for (int i = 0; i &lt; num2; i++) {
+                                        product += num1;
+                                    }
+
+                                    result = product;
+                                }
+
+                                function divide(int num1, int num2) public {
+                                    <span>// Note that this function will not return rational numbers</span>
+
+                                    if (num2 == 0) {
+                                        <span>// If a division by zero case were to occur, the result will be set to a default 0</span>
+                                        result = 0;
+                                    }
+                                    else {
+                                        result = num1 / num2;
+                                    }
+                                }
+                            }
+                        </code>
+                    </pre>
                 </div>
               </li>
             </ul>
