@@ -714,34 +714,7 @@ else {
             </p>
         </div>
         <div id="subheading">
-            <h3>For Loops</h3>
-        </div>
-        <div>
-            <p>
-                For loops are used when a process needs to be repeated some number of times, where the number of repetitions <u>is known</u> before running the program.<br>
-                For loop declarations feature three distinct elements:<br>
-
-            </p>
-            
-        </div>
-        <div>
-            <ol style="color: white">
-                <li>A variable declaration - this is the counter for the for loop</li>
-                <li>A condition - the for loop will repeat until this condition is false. Often, this condition revolves around the variable declared in before it</li>
-                <li>A process that is performed after each iteration</li>
-            </ol>
-        </div>
-        <div>
-            <pre>
-                <code>
-for (uint i = 0; i < 5; i++) {
-…
-}
-<span style="color:green">
-// This loop will run 5 times, since it runs until the variable i is 5 or greater,<br> and after each loop, the value of i increases by 1
-// i will be 0, then 1, 2, 3, 4, and following this the loop stops</span>                  
-                </code>
-            </pre>
+            <h2>Loops</h2>
         </div>
         <div id="subheading">
             <h3>For Loops</h3>
@@ -773,7 +746,6 @@ for (uint i = 0; i < 5; i++) {
                 </code>
             </pre>
         </div>
-
 
         <div id="subheading">
             <h3>While Loops</h3>
@@ -835,10 +807,138 @@ do {
         </div>
         <div>
             <p>
-                <code>Break</code> - quits the current loop. Program flow will be directed to directly outside the loop, after the bottom brace
+                <code>Break</code> - quits the current loop. Program flow will be directed to directly outside the loop, after the bottom brace<br>
                 <code>Continue</code> - skips the current iteration and goes to the start of the next iteration.
             </p>
         </div>
+        <div id="subheading">
+            <h2>Functions</h2>
+        </div>
+        <div>
+            <p>
+                Functions are a series of processes performed in series.
+                <br>Code executes from the top of the function down, when the end of the function is reached, program either returns value, does nothing, or returns to calling function
+                <br>Function declaration format:
+            </p>
+        </div>
+        <div>
+            <pre>
+                <code>
+function functionName(&lttype> parameter1, &lttype>parameter2, …) modifiers returns(&lttype>) {
+
+}                    
+                </code>
+            </pre>
+        </div>
+        <div>
+            <ol style="color: white; list-style-type: disc;">
+                <li>The function declaration starts with the word “function.”</li>
+
+                <li>Following this is the function name. Functions can be named anything within the naming restrictions for variables.</li>
+
+                <li>Parameters are values that can be passed into a function. Not all functions require parameters, and if a function takes no parameters, the parentheses are to be left empty.</li>
+
+                <li>Modifiers modify the properties of the function. For example, it can dictate who can call the function.</li>
+
+                <li>A value can be returned from a function. If there is a return value, then the type of the returned value must be specified in the function header. If there is no return value,<br>the “returns” portion of the function signature can be omitted.</li>
+            </ol>
+        </div>
+        <div>
+            <pre>
+                <code>
+function sum(int a, int b) public returns(int) {
+    int c = a + b;
+    return c;
+}
+
+
+function increment() public{
+    x++;
+}
+                </code>
+            </pre>
+        </div>
+
+        <div id="subheading">
+            <h2>
+                First Contract
+            </h2> 
+        </div>
+        <div>
+            <p>
+                Putting all of the concepts together, here is a contract that will increment a counter.
+            </p>
+        </div>
+        <div>
+            <pre>
+                <code>
+pragma solidity ^0.8.0;
+
+
+contract Counter {
+
+
+    int public count;
+
+
+    function increment() public {
+        count++;
+    }
+
+
+    function setCounter(int val) public {
+        count = val;
+    }
+
+
+    function resetCounter() public {
+        count = 0;
+    }
+}                    
+                </code>
+            </pre>
+        </div>
+        <div>
+            <p>
+                The <code>pragma</code> statement will be covered in Chapter 2, and can be ignored for now.
+
+                <br>The body of the contract is delimited by the braces {} after our declaration of our counter contract. Contracts will also be covered in Chapter 2.
+                <br>
+                <br><code style="color:#F4BC1C">int public count;</code>
+                <br>This is a variable declaration. In this case, it will be an integer that will store the counter value for this contract.
+                <br>
+                <br><code style="color:#F4BC1C">function increment() public {</code>
+                <br>&emsp;  <code style="color:#F4BC1C">count++;</code>
+                <br><code style="color:#F4BC1C">}</code>
+                <br>This is a function that takes no parameters and does not return anything. It performs one action - increment the count variable.
+                <br>
+                <br><code style="color:#F4BC1C">function setCounter(int val) public {</code>
+                <br> &emsp;       <code style="color:#F4BC1C">count = val;</code>
+                <br><code style="color:#F4BC1C">}</code>
+                <br>This is another function that takes an integer to set the counter value to.
+                <br>
+                <br><code style="color:#F4BC1C">function resetCounter() public {</code>
+                <br> &emsp;       <code style="color:#F4BC1C">count = 0;</code>
+                <br><code style="color:#F4BC1C">}</code>
+                <br>This function resets the value of the counter.
+
+            </p>
+        </div>
+        <div id="subheading">
+            <h2>
+                Coding Assessment
+            </h2>
+        </div>
+        <div>
+            <p>
+                Write a contract that stores 2 integers which can be changed at any time, and can add, subtract, multiply, and divide the two two numbers.
+            </p>
+        </div>
+        <div style = "justify-content: center; padding-top: 100px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px;">
+            <iframe src="https://ethfiddle.com/" style="width:700px; height:500px;"></iframe>
+        </div>
+
+        
         <!--End of page content-->
 
         <!-- Hero Section -->
