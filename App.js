@@ -2,7 +2,7 @@ const quizData = [
   {
       question: "Match the type with the \ncorrect value and order\n\ninteger, float, boolean, char, string",
       a: "'@', true, 42, &quot;Hello World&quot;, 2.71",
-      b: "42, 2.71, true, '@', \"Hello World\"",
+      b: "42, 2.71, true, '@', &quot;Hello World&quot;",
       c: "2.71, 42, true, '@', &quot;Hello World&quot;",
       d: "2.71, 42, '@', true, &quot;Hello World&quot;",
       correct: "b",
@@ -24,7 +24,7 @@ const quizData = [
       correct: "b",
   },
   {
-    question: "How many times will this loop run? \nint a = 25; \nwhile (a >= 4) { \n\ta %= 4; \n\ta *= 8; \n\ta += 5;\n}",
+    question: "How many times will this loop run? \nint a = 25; \nwhile (a >= 4) { \na %= 4; \na *= 8; \na += 5;}",
     a: "1",
     b: "3",
     c: "5",
