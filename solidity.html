@@ -670,7 +670,175 @@
                 </tr>
             </table>
         </div>
+        <div id="subheading">
+            <h3 >Parentheses</h3>
+        </div>
+        <div>
+            <p>
+                Similar to BEDMAS, brackets can be used to specify the order of operations.<br>
+                Eg.<br>
+                <code>(3 * (4 + (5 - 6))) == 9</code>
+            </p>
+        </div>
+        <div id="subheading">
+            <h2 >Decision-Making</h2>
+        </div>
+        <div id="subheading">
+            <h3>If, else if, and else statements</h3>
+        </div>
+        <div>
+            <p>
+                If statements are useful when you want to perform certain actions if a certain (boolean) condition is true.<br>
+                Each boolean condition is tested, and if the condition is true, the block associated with that condition is run.<br>
+                If the first condition fails, the program checks the second, then the third, and so on.
+            </p>
+        </div>
+        <div>
+            <pre>
+                <code>
+if (&ltcondition>) {
+<span style="color:green">// Do something</span>
+}
+else if (&ltcondition>) {
+<span style="color:green">// Do something</span>
+}
+else {
+<span style="color:green">// Do something</span>
+}
+                </code>
+            </pre>
+        </div>
+        <div>
+            <p>
+                <i>Note: Once the condition is true, every following block is ignored and the program jumps to the end of the if statement.</i>
+            </p>
+        </div>
+        <div id="subheading">
+            <h3>For Loops</h3>
+        </div>
+        <div>
+            <p>
+                For loops are used when a process needs to be repeated some number of times, where the number of repetitions <u>is known</u> before running the program.<br>
+                For loop declarations feature three distinct elements:<br>
 
+            </p>
+            
+        </div>
+        <div>
+            <ol style="color: white">
+                <li>A variable declaration - this is the counter for the for loop</li>
+                <li>A condition - the for loop will repeat until this condition is false. Often, this condition revolves around the variable declared in before it</li>
+                <li>A process that is performed after each iteration</li>
+            </ol>
+        </div>
+        <div>
+            <pre>
+                <code>
+for (uint i = 0; i < 5; i++) {
+…
+}
+<span style="color:green">
+// This loop will run 5 times, since it runs until the variable i is 5 or greater,<br> and after each loop, the value of i increases by 1
+// i will be 0, then 1, 2, 3, 4, and following this the loop stops</span>                  
+                </code>
+            </pre>
+        </div>
+        <div id="subheading">
+            <h3>For Loops</h3>
+        </div>
+        <div>
+            <p>
+                For loops are used when a process needs to be repeated some number of times, where the number of repetitions <u>is known</u> before running the program.<br>
+                For loop declarations feature three distinct elements:<br>
+
+            </p>
+            
+        </div>
+        <div>
+            <ol style="color: white">
+                <li>A variable declaration - this is the counter for the for loop</li>
+                <li>A condition - the for loop will repeat until this condition is false. Often, this condition revolves around the variable declared in before it</li>
+                <li>A process that is performed after each iteration</li>
+            </ol>
+        </div>
+        <div>
+            <pre>
+                <code>
+for (uint i = 0; i < 5; i++) {
+…
+}
+<span style="color:green">
+// This loop will run 5 times, since it runs until the variable i is 5 or greater,<br> and after each loop, the value of i increases by 1
+// i will be 0, then 1, 2, 3, 4, and following this the loop stops</span>                  
+                </code>
+            </pre>
+        </div>
+
+
+        <div id="subheading">
+            <h3>While Loops</h3>
+        </div>
+        <div>
+            <p>
+                While loops are used when a process needs to be repeated some number of times, where the number of repetitions <u>is not known</u> before running the program.<br>
+                Format:<br>
+                <code>while (&ltcondition>) {<br>
+                    <code>…</code><br>
+                    <code>}</code><br>
+                    </code>
+            </p>
+            
+        </div>
+        <div>
+            <pre>
+                <code>
+int a = 0;
+while (a < 10) {
+    a += 2;
+}
+<span style="color:green">
+// This program will repeat the contents of the loop until the condition is false
+// Note that it is possible to create an infinite loop, where the condition is never false.<br>// This should be avoided, so ensure loops have an exit point.
+</span>                  
+                </code>
+            </pre>
+        </div>
+        <div id="subheading">
+            <h3>Do-while Loops</h3>
+        </div>
+        <div>
+            <p>
+                Do-while loops are the same as while loops, except they are guaranteed to run at least once. This could be a concern if the condition in a while loop<br> may not be true but the program must run the contents of the loop at least once.
+                <br>Format:<br>
+                <code>do {<br></code>
+                <code>…</code><br>
+                <code>} while (&ltcondition>)</code><br>
+            </p>
+            
+        </div>
+        <div>
+            <pre>
+                <code>
+int a = 0;
+do {
+    a += 2;
+} while (a < 10);                    
+<span style="color:green">
+// This loop does the same thing as the while loop example.
+// The one difference is that it is guaranteed to run one iteration.    
+</span>                  
+                </code>
+            </pre>
+        </div>
+        <div id="subheading">
+            <h3>Loop Control</h3>
+        </div>
+        <div>
+            <p>
+                <code>Break</code> - quits the current loop. Program flow will be directed to directly outside the loop, after the bottom brace
+                <code>Continue</code> - skips the current iteration and goes to the start of the next iteration.
+            </p>
+        </div>
         <!--End of page content-->
 
         <!-- Hero Section -->
