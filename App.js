@@ -1,10 +1,10 @@
 const quizData = [
   {
       question: "Match the type with the \ncorrect value and order\n\ninteger, float, boolean, char, string",
-      a: "'@', true, 42, &quot;Hello World&quot;, 2.71",
-      b: "42, 2.71, true, '@', &quot;Hello World&quot;",
-      c: "2.71, 42, true, '@', &quot;Hello World&quot;",
-      d: "2.71, 42, '@', true, &quot;Hello World&quot;",
+      a: "'@', true, 42, \"Hello World\", 2.71",
+      b: "42, 2.71, true, '@', \"Hello World\"",
+      c: "2.71, 42, true, '@', \"Hello World\"",
+      d: "2.71, 42, '@', true, \"Hello World\"",
       correct: "b",
   },
   {
