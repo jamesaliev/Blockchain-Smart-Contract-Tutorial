@@ -24,7 +24,7 @@ const quizData = [
       correct: "b",
   },
   {
-    question: "How many times will this loop run? \nint a = 25; \nwhile (a >= 4) { \n\ta %= 4; \n\ta *= 8; \n\ta += 5;\n}",
+    question: "How many times will this loop run? \nint a = 25; \nwhile (a >= 4) { \na %= 4; \na *= 8; \na += 5;}",
     a: "1",
     b: "3",
     c: "5",
