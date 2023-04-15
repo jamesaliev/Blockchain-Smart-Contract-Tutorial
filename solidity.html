@@ -76,10 +76,10 @@
         <div>
             <h1><b>Solidity</b></h1>
         </div>
-        <div id="subheading">
+        <div>
             <h2 >Variables</h2>
         </div>
-        <div id="subheading">
+        <div>
             <h3>
                 What are variables?
             </h3>
@@ -189,7 +189,7 @@
             </p>
         </div>
 
-        <div id="subheading">
+        <div>
             <h2 >Assignment Operators</h2>
         </div>
         <div>
@@ -221,7 +221,7 @@
                 </p>
         </div>
 
-        <div id="subheading">
+        <div>
             <h2 >Operations</h2>
         </div>
         <div>
@@ -229,7 +229,7 @@
                 In a smart contract, operations can be performed on variables, such as basic math, and comparisons.
             </p>
         </div>
-        <div id="subheading">
+        <div>
             <h3>
                 Arithmetic
             </h3>
@@ -465,7 +465,7 @@
             </p>
         </div>
 
-        <div id="subheading">
+        <div>
             <h3 >Comparison</h3>
         </div>
 
@@ -648,7 +648,7 @@
                 </tr>
             </table>
         </div>
-        <div id="subheading">
+        <div>
             <h3 >Parentheses</h3>
         </div>
         <div>
@@ -658,10 +658,10 @@
                 <code>(3 * (4 + (5 - 6))) == 9</code>
             </p>
         </div>
-        <div id="subheading">
+        <div>
             <h2 >Decision-Making</h2>
         </div>
-        <div id="subheading">
+        <div>
             <h3>If, else if, and else statements</h3>
         </div>
         <div>
@@ -674,15 +674,15 @@
         <div>
             <pre>
                 <code>
-if (&ltcondition>) {
-<span style="color:green">// Do something</span>
-}
-else if (&ltcondition>) {
-<span style="color:green">// Do something</span>
-}
-else {
-<span style="color:green">// Do something</span>
-}
+                    if (&ltcondition>) {
+                    <span style="color:green">// Do something</span>
+                    }
+                    else if (&ltcondition>) {
+                    <span style="color:green">// Do something</span>
+                    }
+                    else {
+                    <span style="color:green">// Do something</span>
+                    }
                 </code>
             </pre>
         </div>
@@ -691,7 +691,7 @@ else {
                 <i>Note: Once the condition is true, every following block is ignored and the program jumps to the end of the if statement.</i>
             </p>
         </div>
-        <div id = "subheading">
+        <div>
             <h3>
                 Content Quiz
             </h3>
@@ -721,10 +721,10 @@ else {
             <button style = "border-top-right-radius: 5px; border-top-left-radius: 5px;" id = "submit">Submit</button>
             <script src="App.js"></script>
         </div>  
-        <div id="subheading">
+        <div>
             <h2>Loops</h2>
         </div>
-        <div id="subheading">
+        <div>
             <h3>For Loops</h3>
         </div>
         <div>
@@ -745,17 +745,17 @@ else {
         <div>
             <pre>
                 <code>
-for (uint i = 0; i < 5; i++) {
-…
-}
-<span style="color:green">
-// This loop will run 5 times, since it runs until the variable i is 5 or greater,<br> and after each loop, the value of i increases by 1
-// i will be 0, then 1, 2, 3, 4, and following this the loop stops</span>                  
+                    for (uint i = 0; i < 5; i++) {
+                    …
+                    }
+                    <span style="color:green">
+                    // This loop will run 5 times, since it runs until the variable i is 5 or greater,<br> and after each loop, the value of i increases by 1
+                    // i will be 0, then 1, 2, 3, 4, and following this the loop stops</span>                  
                 </code>
             </pre>
         </div>
 
-        <div id="subheading">
+        <div>
             <h3>While Loops</h3>
         </div>
         <div>
@@ -772,18 +772,18 @@ for (uint i = 0; i < 5; i++) {
         <div>
             <pre>
                 <code>
-int a = 0;
-while (a < 10) {
-    a += 2;
-}
-<span style="color:green">
-// This program will repeat the contents of the loop until the condition is false
-// Note that it is possible to create an infinite loop, where the condition is never false.<br>// This should be avoided, so ensure loops have an exit point.
-</span>                  
+                    int a = 0;
+                    while (a < 10) {
+                        a += 2;
+                    }
+                    <span style="color:green">
+                    // This program will repeat the contents of the loop until the condition is false
+                    // Note that it is possible to create an infinite loop, where the condition is never false.<br>// This should be avoided, so ensure loops have an exit point.
+                    </span>                  
                 </code>
             </pre>
         </div>
-        <div id="subheading">
+        <div>
             <h3>Do-while Loops</h3>
         </div>
         <div>
@@ -799,18 +799,18 @@ while (a < 10) {
         <div>
             <pre>
                 <code>
-int a = 0;
-do {
-    a += 2;
-} while (a < 10);                    
-<span style="color:green">
-// This loop does the same thing as the while loop example.
-// The one difference is that it is guaranteed to run one iteration.    
-</span>                  
+                    int a = 0;
+                    do {
+                        a += 2;
+                    } while (a < 10);                    
+                    <span style="color:green">
+                    // This loop does the same thing as the while loop example.
+                    // The one difference is that it is guaranteed to run one iteration.    
+                    </span>                  
                 </code>
             </pre>
         </div>
-        <div id="subheading">
+        <div>
             <h3>Loop Control</h3>
         </div>
         <div>
@@ -819,7 +819,7 @@ do {
                 <code>Continue</code> - skips the current iteration and goes to the start of the next iteration.
             </p>
         </div>
-        <div id="subheading">
+        <div>
             <h2>Functions</h2>
         </div>
         <div>
@@ -832,9 +832,9 @@ do {
         <div>
             <pre>
                 <code>
-function functionName(&lttype> parameter1, &lttype>parameter2, …) modifiers returns(&lttype>) {
+                    function functionName(&lttype> parameter1, &lttype>parameter2, …) modifiers returns(&lttype>) {
 
-}                    
+                    }                    
                 </code>
             </pre>
         </div>
@@ -854,20 +854,20 @@ function functionName(&lttype> parameter1, &lttype>parameter2, …) modifiers re
         <div>
             <pre>
                 <code>
-function sum(int a, int b) public returns(int) {
-    int c = a + b;
-    return c;
-}
+                    function sum(int a, int b) public returns(int) {
+                        int c = a + b;
+                        return c;
+                    }
 
 
-function increment() public{
-    x++;
-}
+                    function increment() public{
+                        x++;
+                    }
                 </code>
             </pre>
         </div>
 
-        <div id="subheading">
+        <div>
             <h2>
                 First Contract
             </h2> 
@@ -880,30 +880,30 @@ function increment() public{
         <div>
             <pre>
                 <code>
-pragma solidity ^0.8.0;
+                    pragma solidity ^0.8.0;
 
 
-contract Counter {
+                    contract Counter {
 
 
-    int public count;
+                        int public count;
 
 
-    function increment() public {
-        count++;
-    }
+                        function increment() public {
+                            count++;
+                        }
 
 
-    function setCounter(int val) public {
-        count = val;
-    }
+                        function setCounter(int val) public {
+                            count = val;
+                        }
 
 
-    function resetCounter() public {
-        count = 0;
-    }
-}                    
-                </code>
+                        function resetCounter() public {
+                            count = 0;
+                        }
+                    }                    
+                                    </code>
             </pre>
         </div>
         <div>
@@ -932,7 +932,7 @@ contract Counter {
 
             </p>
         </div>
-        <div id="subheading">
+        <div>
             <h2>
                 Coding Assessment
             </h2>
