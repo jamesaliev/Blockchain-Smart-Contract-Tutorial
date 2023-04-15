@@ -153,14 +153,17 @@
                 &lt;type&gt; [access modifier] name;<br><br>
             
                 Eg.<br>
-                    
-                <code>int public myNumber;<br></code>
-                <code>uint public numSales;<br></code>
-                <code>bool public isValidInput;<br></code>
-                <code>string public user;</code>
-                    
-
             </p>
+        </div>
+        <div style = "justify-content: center; align-items: center; margin-left: 100px;">
+            <pre style = "justify-content: center; align-items: center;">
+                <code style = "text-align: left; margin-left: -40%; justify-content: center; align-items: center;">
+                    int public myNumber;
+                    uint public numSales;
+                    bool public isValidInput;
+                    string public user;
+                </code>
+            </pre>    
         </div>
         <div>
             <ol style ="color: white">
@@ -191,7 +194,7 @@
                 <code>
                     int public num;
                     num = 4;
-                    <span style="font-family:'Courier New'; Color:green" >// This is an invalid statement and will cause an error.</span>
+                    <span style="font-family:'Courier New'; Color:green" >  // This is an invalid statement and will cause an error.</span>
                     string name = 1;
                 </code>
             </pre>
@@ -273,10 +276,16 @@
                     <td>
                         <u>Addition<br></u>
                         You can add two numbers together with +<br>
-                        <code>int a = 5;</code><br>
-                        <code>int b = 10;</code><br>
-                        <code>int c = a + b;</code><br>
-                        <code>// c is equal to 5 + 10, or 15<br></code><br>
+                        <div style="height: 200px; width:500px;overflow:auto;">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -40%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    int c = a + b;
+                                    <span style="font-family:'Courier New'; Color:green" >   // c is equal to 5 + 10, or 15</span>
+                                </code>
+                            </pre>
+                        </div>
 
                     </td>
                 </tr>
@@ -288,10 +297,15 @@
                     <td>
                         <u>Subtraction<br></u>
                         You can subtract two numbers together with -<br>
-                        <code>int a = 5;</code><br>
-                        <code>int b = 10;</code><br>
-                        <code>int c = b - a;</code><br>
-                        <code>// c is equal to 10 - 5, or 5</code><br><br>
+                        <div style="height: 200px; width:500px;overflow:auto;">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -40%;">int a = 5;
+                                    int b = 10;
+                                    int c = b - a;
+                                    <span style="font-family:'Courier New'; Color:green" >   // c is equal to 10 - 5, or 5</span>
+                                </code>
+                            </pre>
+                        </div>
                     </td>
                 </tr>
 
@@ -302,10 +316,16 @@
                     <td>
                         <u>Multiplication<br></u>
                         You can multiply two numbers together with *<br>
-                        <code>int a = 5;</code><br>
-                        <code>int b = 10;</code><br>
-                        <code>int c = b - a;</code><br>
-                        <code>// c is equal to 10 - 5, or 5</code><br><br>
+                        <div style="height: 200px; width:500px;overflow:auto;">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -40%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    int c = b - a;
+                                    <span style="font-family:'Courier New'; Color:green" >   // c is equal to 10 - 5, or 5</span>
+                                </code>
+                            </pre>
+                        </div>
                     </td>
                 </tr>
 
@@ -316,10 +336,16 @@
                     <td>
                         <u>Division<br></u>
                         You can divide two numbers with /<br>
-                        <code>int a = 5;</code><br>
-                        <code>int b = 10;</code><br>
-                        <code>int c = b / a;</code><br>
-                        <code>// c is equal to 0<br></code><br>
+                        <div style="height: 200px; width:500px;overflow:auto;">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -55%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    int c = b / a;
+                                    <span style="font-family:'Courier New'; Color:green" >   // c is equal to 0</span>
+                                </code>
+                            </pre>
+                        </div>
 
                         Why is this? <br>Currently, there is no floating-point division in solidity. When dividing integers, the result always ignores the decimal. 5 / 10 is the same as 0.5, so the result ignores the .5 and returns 0.
 
@@ -335,10 +361,16 @@
                         <u>Modulo<br></u>
                         Returns the remainder of a division.<br>
                         Eg. <br>
-                        <code>int public a = 3;</code><br>
-                        <code>int public b = 2;</code><br>
-                        <code>int public c = 3 % 2;</code><br>
-                        <code>// c = 1, since 3/2 has remainder 1<br></code><br>
+                        <div style="height: 200px; width:500px;overflow:auto;">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -32.5%;">
+                                    int public a = 3;
+                                    int public b = 2;
+                                    int public c = 3 % 2;
+                                    <span style="font-family:'Courier New'; Color:green" >   // c = 1, since 3/2 has remainder 1</span>
+                                </code>
+                            </pre>
+                        </div>
                     </td>
                 </tr>
             </table>
@@ -471,21 +503,22 @@
                 </tr>
                 <tr>
                     <td>
-                        <code>></code>
+                        >
                     </td>
                     <td>
                         <u>Greater than<br></u>
                         Returns true if the right operand is greater than the left operand, otherwise it returns false.<br>
                         <br>Eg.
-                        <pre>
-                            <code>
-                                int a = 5;
-                                int b = 10;
-                                bool c = a < b;
-                                // c will store true, since 5 < 10
-                            </code>
-                        </pre>
-                        
+                        <div style="height: 200px; width:726.817px;overflow:auto;">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -50%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    bool c = a < b;
+                                    <span style="font-family:'Courier New'; Color:green" >    // c will store true, since 5 < 10</span>
+                                </code>
+                            </pre>
+                        </div>    
                     </td>
                 </tr>
                 <tr>
@@ -496,12 +529,16 @@
                         <u>Less than<br></u>
                         Returns true if the left operand is greater than the right operand, otherwise it returns false.<br>
                         <br>Eg.
-                        <code>
-                            <br>int a = 5; <br>
-                            int b = 10; <br>
-                            bool c = a > b; <br>
-                            // c will store false, since 5 < 10
-                        </code>
+                        <div style="height: 200px; width:726.817px;overflow:auto">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -48.5%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    bool c = a > b;
+                                    <span style="font-family:'Courier New'; Color:green" >    // c will store false, since 5 < 10</span>
+                                </code>
+                            </pre>
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -512,20 +549,27 @@
                         <u>Greater than or equal to<br></u>
                         Returns true if the right operand is greater than or equal to left operand, otherwise it returns false.<br>
                         <br>Eg. 1
-                        <code>
-                            <br>int a = 5; <br>
-                            int b = 10; <br>
-                            bool c = a <= b; <br>
-                            // c will store true, since 5 < 10<br><br>
-                        </code>
-
-                        Eg. 2
-                        <code>
-                            <br>int d = 20; <br>
-                            int e = 20; <br>
-                            bool f = a <= b; <br>
-                            // f will store true, since 20 is equal to 20                            
-                        </code>
+                        <div style="height: 200px; width:726.817px;overflow:auto">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -50%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    bool c = a <= b;
+                                    <span style="font-family:'Courier New'; Color:green" >    // c will store true, since 5 < 10</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <br>Eg. 2
+                        <div style="height: 200px; width:726.817px;overflow:auto">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -20.5%;">
+                                    int d = 20;
+                                    int e = 20;
+                                    bool f = a <= b;
+                                    <span style="font-family:'Courier New'; Color:green" >   // f will store true, since 20 is equal to 20</span>                          
+                                </code>
+                            </pre>
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -536,20 +580,27 @@
                         <u>Less than or equal to<br></u>
                         Returns true if the left operand is greater than or equal to right operand, otherwise it returns false.<br>
                         <br>Eg. 1
-                        <code>
-                            <br>int a = 5; <br>
-                            int b = 10; <br>
-                            bool c = a >= b; <br>
-                            // c will store false, since 5 < 10<br><br>
-                        </code>
-
-                        Eg. 2
-                        <code>
-                            <br>int d = 20; <br>
-                            int e = 20; <br>
-                            bool f = a >= b; <br>
-                            // f will store true, since 20 is equal to 20                                                   
-                        </code>
+                        <div style="height: 200px; width:726.817px;overflow:auto">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -47.5%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    bool c = a >= b;
+                                    <span style="font-family:'Courier New'; Color:green" >    // c will store false, since 5 < 10</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <br>Eg. 2
+                        <div style="height: 200px; width:726.817px;overflow:auto">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -12.5%;">
+                                    int d = 20;
+                                    int e = 20;
+                                    bool f = a >= b;
+                                    <span style="font-family:'Courier New'; Color:green" >  // f will store true, since 20 is equal to 20</span>                                         
+                                </code>
+                            </pre>
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -560,20 +611,27 @@
                         <u>Equal to<br></u>
                         Returns true if the left operand and right operand are equal, otherwise it returns false.<br>
                         <br>Eg. 1
-                        <code>
-                            <br>int a = 5; <br>
-                            int b = 10; <br>
-                            bool c = a == b; <br>
-                            // c will store false, since 5 and 10 are not equal<br><br>
-                        </code>
-
-                        Eg. 2
-                        <code>
-                            <br>int d = 20; <br>
-                            int e = 20; <br>
-                            bool f = a == b; <br>
-                            // f will store true, since 20 is equal to 20                                                                         
-                        </code>
+                        <div style="height: 200px; width:726.817px;overflow:auto">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -30.5%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    bool c = a == b;
+                                    <span style="font-family:'Courier New'; Color:green" >    // c will store false, since 5 and 10 are not equal</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <br>Eg. 2
+                        <div style="height: 200px; width:726.817px;overflow:auto">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -4%;">
+                                    int d = 20;
+                                    int e = 20;
+                                    bool f = a == b;
+                                    <span style="font-family:'Courier New'; Color:green" >  // f will store true, since 20 is equal to 20</span>                                                                 
+                                </code>
+                            </pre>
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -582,21 +640,30 @@
                     </td>
                     <td>
                         <u>Not equal to<br></u>
-                        Returns true if the left operand and right operand are not equal, otherwise it returns false.<br>                        <br>Eg. 1
-                        <code>
-                            <br>int a = 5; <br>
-                            int b = 10; <br>
-                            bool c = a != b; <br>
-                            // c will store false, since 5 and 10 are not equal<br><br>
-                        </code>
+                        Returns true if the left operand and right operand are not equal, otherwise it returns false.<br>                        
+                        <br>Eg. 1
+                        <div style="height: 200px; width:726.817px;overflow:auto">
+                            <pre>
+                                <code style = "text-align: left; margin-left: -30%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    bool c = a != b;
+                                    <span style="font-family:'Courier New'; Color:green" >    // c will store false, since 5 and 10 are not equal</span>
+                                </code>
+                            </pre>
+                        </div>
 
-                        Eg. 2
-                        <code>
-                            <br>int a = 5; <br>
-                            int b = 10; <br>
-                            bool c = a != b; <br>
-                            // c will store false, since 5 and 10 are not equal                                                                                                   
-                        </code>
+                        <br>Eg. 2
+                        <div style="height: 200px; width:726.817px;overflow:auto">
+                            <pre>
+                                <code style = "text-align: left; margin-left: 4.5%;">
+                                    int a = 5;
+                                    int b = 10;
+                                    bool c = a != b;
+                                    <span style="font-family:'Courier New'; Color:green" > // c will store false, since 5 and 10 are not equal</span>                                                                                              
+                                </code>
+                            </pre>
+                        </div>
                     </td>
                 </tr>
             </table>
