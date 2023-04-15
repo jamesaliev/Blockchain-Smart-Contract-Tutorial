@@ -99,50 +99,60 @@
                 </tr>
 
                 <tr>
-                    <td>Integer (Signed and unsigned)<br>
+                    <td style = "padding: 15px;">Integer (Signed and unsigned)<br>
                         <code>int</code> (signed)<br>
                         <code>uint</code> (unsigned)
                     </td>
-                    <td>
-                        <li>Whole numbers, like 2, 64, and 256</li>
-                        <li>Signed integers can be positive or negative</li>
-                        <li>Unsigned integers can only be positive or zero, but have a larger maximum value</li>
+                    <td style = "padding: 15px;">
+                        <ul>
+                            <li>Whole numbers, like 2, 64, and 256</li>
+                            <li>Signed integers can be positive or negative</li>
+                            <li>Unsigned integers can only be positive or zero, but have a larger maximum value</li>
+                        </ul>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Floating point</td>
-                    <td>
-                        <li>Rational numbers, like 1.5, 2.573, and 10.0. </li>
-                        <li>Solidity does not have floating point values implemented at the time of writing.</li>
+                    <td style = "padding: 15px;">Floating point</td>
+                    <td style = "padding: 15px;">
+                        <ul>
+                            <li>Rational numbers, like 1.5, 2.573, and 10.0. </li>
+                            <li>Solidity does not have floating point values implemented at the time of writing.</li>
+                        </ul>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Boolean<br>
+                    <td style = "padding: 15px;">Boolean<br>
                         <code>bool</code>
                     </td>
-                    <td>
-                        <li>True or false.</li>
-                        <li>Boolean values are useful in making decisions in a program.</li>
+                    <td style = "padding: 15px;">
+                        <ul>
+                            <li>True or false.</li>
+                            <li>Boolean values are useful in making decisions in a program.</li>
+                        </ul>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Character</td>
-                    <td>
-                        <li>A single character, like ‘a’, ‘B’, and ‘@’</li>
-                        <li>Characters are not implemented in Solidity.</li>
+                    <td style = "padding: 15px;">Character</td>
+                    <td style = "padding: 15px;">
+                        <ul>
+                            <li>A single character, like ‘a’, ‘B’, and ‘@’</li>
+                            <li>Characters are not implemented in Solidity.</li>
+                        </ul>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>String<br>
+                    <td style = "padding: 15px;">String<br>
                         <code>string</code>
                     </td>
-                    <td>
-                        <li>A “string” of characters, like a word or a sentence. </li>
-                        <li> For example, “This is a sentence” is a string.</li>
+                    <td style = "padding: 15px;">
+                        <ul>
+                            <li>A “string” of characters, like a word or a sentence. </li>
+                            <li> For example, “This is a sentence” is a string.</li>
+                        </ul>
                     </td>
                 </tr>
             </table>
@@ -212,36 +222,6 @@
                 <code>a = 15;</code><br>
                 </p>
         </div>
-        <div id = "subheading">
-            <h3>
-                Content Quiz
-            </h3>
-        </div>
-        <div style = "display: block; margin:auto" class = "question-container" id = "quiz">
-            <h2 style = "padding-top: 50px;" id = "question">Question Text</h2>
-            <div style = "justify-content: left; text-align: left; padding-top: 0; padding-bottom: 0;" class = "question-header">
-                <ul>
-                    <li>
-                        <input type = "radio" name = "answer" id = "a" class = "answer">
-                        <label style = "color: #d8d8fc;" for = "a" id = "a_text">Answer</label>
-                    </li>
-                    <li>
-                        <input type = "radio" name = "answer" id = "b" class = "answer">
-                        <label style = "color: #d8d8fc;" for = "b" id = "b_text">Answer</label>
-                    </li>
-                    <li>
-                        <input type = "radio" name = "answer" id = "c" class = "answer">
-                        <label style = "color: #d8d8fc;" for = "c" id = "c_text">Answer</label>
-                    </li>
-                    <li>
-                        <input type = "radio" name = "answer" id = "d" class = "answer">
-                        <label style = "color: #d8d8fc;" for = "d" id = "d_text">Answer</label>
-                    </li>
-                </ul>
-            </div>
-            <button style = "border-top-right-radius: 5px; border-top-left-radius: 5px;" id = "submit">Submit</button>
-            <script src="App.js"></script>
-        </div>
 
         <div id="subheading">
             <h2 >Operations</h2>
@@ -263,7 +243,7 @@
             </p>
         </div>
         <div>
-            <table style="width: 60%;">
+            <table style="width: 30%;">
                 <tr>
                     <th>Arithmetic Symbol</th>
                     <th>Operation</th>
@@ -347,11 +327,11 @@
                             </pre>
                         </div>
 
-                        Why is this? <br>Currently, there is no floating-point division in solidity. When dividing integers, the result always ignores the decimal. 5 / 10 is the same as 0.5, so the result ignores the .5 and returns 0.
+                        Why is this? <br>Currently, there is no floating-point division in solidity. When dividing<br> integers, the result always ignores the decimal. 5 / 10 is the same as <br>0.5, so the result ignores the .5 and returns 0.
 
                         <br><br><i>Note that division by 0 will cause an error.</i><br><br>
 
-                        <b>Division in Solidity is not well behaved in Solidity and should be avoided if possible.</b>
+                        <b>Division in Solidity is not well behaved in Solidity and should be<br> avoided if possible.</b>
                     </td>
                 </tr>
 
@@ -386,71 +366,71 @@
         <div>
             <table>
                 <tr>
-                    <th>Operation</th>
-                    <th>Shorthand Symbol</th>
-                    <th>Equivalent Operation</th>
+                    <th style = "padding: 5px;">Operation</th>
+                    <th style = "padding: 5px;">Shorthand Symbol</th>
+                    <th style = "padding: 5px;">Equivalent Operation</th>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td style = "padding: 5px;">
                         Addition
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>+=</code>
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>a = a + 2;</code><br>
                         <code>a += 2;</code><br><br>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td style = "padding: 5px;">
                         Subtraction
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>-=</code>
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>a = a - 2;</code><br>
                         <code>a -= 2;</code><br><br>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td style = "padding: 5px;">
                         Multiplication
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>*=</code>
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>a = a * 2;</code><br>
                         <code>a *= 2;</code><br><br>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td style = "padding: 5px;">
                         Division
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>/=</code>
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>a = a / 2;</code><br>
                         <code>a /= 2;</code><br><br>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td style = "padding: 5px;">
                         Modulo
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>%=</code>
                     </td>
-                    <td>
+                    <td style = "padding: 5px;">
                         <code>a = a % 2;</code><br>
                         <code>a %= 2;</code><br><br>
                     </td>
@@ -713,6 +693,36 @@ else {
                 <i>Note: Once the condition is true, every following block is ignored and the program jumps to the end of the if statement.</i>
             </p>
         </div>
+        <div id = "subheading">
+            <h3>
+                Content Quiz
+            </h3>
+        </div>
+        <div style = "display: block; margin:auto" class = "question-container" id = "quiz">
+            <h2 style = "padding-left: 15px; padding-top: 50px; text-align: left;" id = "question">Question Text</h2>
+            <div style = "justify-content: left; text-align: left; padding-top: 0; padding-bottom: 0;" class = "question-header">
+                <ul>
+                    <li>
+                        <input type = "radio" name = "answer" id = "a" class = "answer">
+                        <label style = "color: #d8d8fc;" for = "a" id = "a_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type = "radio" name = "answer" id = "b" class = "answer">
+                        <label style = "color: #d8d8fc;" for = "b" id = "b_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type = "radio" name = "answer" id = "c" class = "answer">
+                        <label style = "color: #d8d8fc;" for = "c" id = "c_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type = "radio" name = "answer" id = "d" class = "answer">
+                        <label style = "color: #d8d8fc;" for = "d" id = "d_text">Answer</label>
+                    </li>
+                </ul>
+            </div>
+            <button style = "border-top-right-radius: 5px; border-top-left-radius: 5px;" id = "submit">Submit</button>
+            <script src="App.js"></script>
+        </div>  
         <div id="subheading">
             <h2>Loops</h2>
         </div>
@@ -950,10 +960,6 @@ contract Counter {
             </div>
         </div>
         
-        <div style = "justify-content: center; padding-top: 100px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px;">
-            <iframe src="https://ethfiddle.com/" style="width:700px; height:500px;"></iframe>
-        </div>
-
         <script src="app.js"></script>
     </body>
 

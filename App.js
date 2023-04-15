@@ -1,11 +1,35 @@
 const quizData = [
   {
-      question: "Which is the best?",
-      a: "Jonah H",
-      b: "Jonah A",
-      c: "Jonah B",
-      d: "Jonah T",
-      correct: "d",
+      question: "Match the type with the \ncorrect value and order\n\ninteger, float, boolean, char, string",
+      a: "'@', true, 42, &quot;Hello World&quot;, 2.71",
+      b: "42, 2.71, true, '@', &quot;Hello World&quot;",
+      c: "2.71, 42, true, '@', &quot;Hello World&quot;",
+      d: "2.71, 42, '@', true, &quot;Hello World&quot;",
+      correct: "b",
+  },
+  {
+      question: "What is the result of this \noperation? \n(4 * (5 - 2) % 5 - 3 * 2) \n+ (8 - 5 * 7)\n\n(Hint: Remember that BEDMAS \nstill applies even if parentheses\n are not present)",
+      a: "-31",
+      b: "19",
+      c: "17",
+      d: "-29",
+      correct: "a",
+  },
+  {
+      question: "What is the value of c at the end of\nthe if block:\n\nint c;\nint a = 12;\nint b = a + 5;\nif (a * b < (a-7) * (b + 7)) {\n\tc = 12;\n}\nelse if ((a <= b) != (b <= a)){\n\tc = 4;\n}\nelse if (a != (b * b * a - 3457)) {\n\tc = 120;\n}\nelse {\n\tc = 0;\n}",
+      a: "12",
+      b: "4",
+      c: "120",
+      d: "0",
+      correct: "b",
+  },
+  {
+    question: "How many times will this loop run? \nint a = 25; \nwhile (a >= 4) { \na %= 4; \na *= 8; \na += 5;}",
+    a: "1",
+    b: "3",
+    c: "5",
+    d: "This is an infinite loop",
+    correct: "d",
   },
 ];
 

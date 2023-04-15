@@ -230,6 +230,10 @@ p {
     padding: 4rem;
 }
 
+#question {
+    white-space: pre;
+}
+
 ul li {
     font-size: 1.2rem;
     margin: 1rem 0;
