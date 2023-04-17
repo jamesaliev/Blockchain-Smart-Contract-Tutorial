@@ -209,7 +209,9 @@ img {
 
 p {
     color: white;
+    font-size: 24px;
 }
+
 
 .solidity-intro {
     display: grid;
@@ -365,6 +367,12 @@ table, th, td {
     border: 1px solid;
     width: auto;
     color: aliceblue;
+}
+
+ol {
+    font-size: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 pre code {
