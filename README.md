@@ -2,6 +2,9 @@
 
 Created by Team 120 of APS112 - Engineering Strategies & Practice II (2023)
 
+The tutorial is available through this link:
+https://jamesaliev.github.io/Blockchain-Smart-Contract-Tutorial/
+
 # Contributing
 
 If you believe you can improve our tutorial, please considering contributing.
